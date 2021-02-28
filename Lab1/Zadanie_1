@@ -1,1 +1,26 @@
-Test
+1. Czym różni się wzorzec Strategia od zwykłej implementacji interfejsu? Jakie są wady i zalety tego wzorca?
+
+Zadaniem interfejsu jest nałożenie (implementacja) określonych zachowań na inne klasy.
+Ponieważ jednak interfejsy nie posiadają kodu implementującego, to nie można wielokrotnie wykorzystywać fragmentów
+takiego kodu. W przypadku potrzeby modyfikacji określonego zachowania, trzeba modyfikować wszystkie implementacje,
+co w przypadku dużej ilości klas będzie czasochłonne i błędogenne.
+Czasami zachowanie obiektu jest zależne od jego specyfiki i wymaga tworzenia instrukcji warunkowych. Im więcej takich obiektów,
+tym kod staje się mniej czytelny, a zarządzanie nim trudniejsze.
+
+We wzorcu Strategia definiujemy zestawy zachowań w formie osobnych klas. Superklasa korzysta z tych zestawów i wyposażona
+jest w metody, które pozwalają na dynamiczne ustawianie zachowania obiektu (bez konieczności tworzenia instruckji warunkowych).
+Wszystkie te właściwości dziedziczą klasy podrzędne.
+Dzięki takiemu rozwiązaniu zmiana zachowania klasy podrzędnej sprowadza się do wywołania właściwej metody opisującej to zachowanie.
+Nie ma potrzeby wprowadzania zmian w konstruktorze superklasy i klasy podrzędnej.
+Dzięki takiemu rozwiązaniu kod jest skalowalny i możliwy do przenoszenia. Daje też większą elastyczność w zakresie wprowadzania zmian.
+
+Zalety wzorca Strategia:
+
+- uproszczenie kodu, łatwiejsza jego analiza i testowanie
+- zredukowanie liczby wyrażeń warunkowych
+- możliwość zmiany zachowań obiektów w czasie działania programu
+
+Wady
+
+- większa liczba klas
+- niezbyt intuicyjny sposób pobierania danych z superklasy

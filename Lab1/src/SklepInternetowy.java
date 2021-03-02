@@ -22,7 +22,7 @@ class PLTaxes implements NaliczPodatekInterfejs {
     @Override
     public double naliczPodatek(double incoming) {
         System.out.print("Należny podatek wynosi: ");
-        return incoming * 0.065;
+        return incoming * 0.06;
     }
 }
 

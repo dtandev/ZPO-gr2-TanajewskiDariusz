@@ -61,7 +61,7 @@ class interestB extends Interest {}
 class interestC extends Interest {}
 
 
-public class BankOnline {
+public class BankEx2 {
 
     public static void main(String[] args) {
         Bank IdeaBank = new Bank();

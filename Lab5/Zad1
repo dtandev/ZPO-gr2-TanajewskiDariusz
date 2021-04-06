@@ -1,0 +1,9 @@
+Jakie jest najczęstsze wykorzystanie wzorca Dekorator?
+
+Celem wzorca Dekorator jest rozszerzenie bazowych klas o nowe parametry lub metody,
+ale bez naruszania kodu tych klas. Wykorzystywane są do tego interfejsy.
+Dzięki temu kod pozostaje kompatybilny i transparentny.
+Kolejną zaletą dekoratorów jest możliwość wykorzystania ich kombinacji. Dzięki temu
+sprawdzają się w implementacjach, gdzie odbiorca ma wpływ na ostateczny kształt czy zawartość
+produktu finalnego. Mogą to byc takie miejsca jak: salon samochodowy, pizzeria, kreator mebli i
+wiele innych, gdzie oprócz samego produktu użytkownik wybiera jego komponenty.

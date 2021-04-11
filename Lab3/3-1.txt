@@ -1,0 +1,6 @@
+3.1 Jakie jest najczęstsze wykorzystanie wzorca Obserwator?
+
+Wzorzec obserwator wykorzystuje się najczęściej do monitorowania zmian stanu obiektu. W sytuacji, kiedy dochodzi do zdarzeń, które powinny wyzwalać jakieś zachowanie,
+wzorzec obserwator aktualizuje swój stan na podstawie zmiany obserwowanego elementu. Dzięki temu można w sposób dynamiczny przekazywać konkretne informacje do podmiotów śledzących. 
+Przykładem takiego rozwiązania może być np. system kontroli jakości powietrza.  
+

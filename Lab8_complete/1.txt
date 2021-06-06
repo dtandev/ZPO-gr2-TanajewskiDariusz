@@ -1,0 +1,5 @@
+Przykłady użycia wzorca Singleton:
+
+Nawiązywanie i przechowywanie połączenia do bazy danych (lub innego zasobu zewnętrznego, takiego, którego inicjujemy raz w ramach działania programu).
+Rejestrowanie obiektów jakiegoś typu w celu późniejszego grupowego uruchomienia konkretnej metody na każdym z nich (co jest szczególnie przydatne w prostych systemach powiadamiających).
+Stworzenie w jednym miejscu mechanizmu wykorzystywanego wielokrotnie w ramach aplikacji (na przykład mechanizmu logowania).

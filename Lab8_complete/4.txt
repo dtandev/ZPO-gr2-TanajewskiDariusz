@@ -1,0 +1,11 @@
+W jaki sposób zaimplementować wzorzec Singleton tak, aby można go było wykorzystać
+w programach współbieżnych? Podać przykład takiej implementacji.
+
+Aby zaimplementować wzorzec w taki sposób, aby mógł być wykorzystany w programach współbieżnych, 
+należy dodać w deklaracji metody "getInstance" modyfikator "synchronized" tj. zadeklarować metodą 
+getInstance jako metodę synchronizowaną. Zmusza to poszczególne wątki do oczekiwania na swoją kolejkę
+w dostępie do tej metody. W ten sposób dwa wątki nie dostaną dostępu do tej metody w tym samym czasie. 
+
+public static synchronized Miesiac getInstance(NazwyMiesiecy miesiac) {
+	return miesiace.get(miesiac);
+}

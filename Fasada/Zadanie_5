@@ -1,0 +1,4 @@
+1. Jaka jest różnica pomiędzy Fasadą a Adapterem?
+
+Wzorzec Adapter zmienia interfejsy jednej lub większej ilości klas w jeden interfejs, zgodny z oczekiwaniami użytkownika i to jest jego przeznaczenie. 
+Z kolei wzorzec Fasada ma za zadanie uproszczenie interfejsu dla danego podsystemu. 

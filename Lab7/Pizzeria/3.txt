@@ -1,0 +1,3 @@
+Metodą szablonową może być na przykład edytor tekstu Libre Office. Teoretycznie dedykowany jest do plików .odt, ale potrafi otworzyć też pliki w formatach podobnych .dtt .doc .docx.
+To samo można powierdzieć o każdej aplikacji, która oferuje możliwość edycji plików w formatach innych, niż te, które są jej dedykowane. Istnieje zapewne ogólna metoda otwierania i dekodowania pliku np. "Open...", ale w zależności od tego, w jakim formacie jest owy plik, zostaje wywołana właściwa metoda, która nadpisuje kluczowe elementy klasy pierwotnej "Open...". 
+
